@@ -5,7 +5,8 @@
 }
 
 body {
+  position: relative;
   font-family: "Montserrat", sans-serif;
-  background-color: rgb(27, 27, 27);
+  background: rgb(27, 27, 27);
   color: #fff;
 }
