@@ -20,27 +20,26 @@
       margin-bottom: 5px;
       transition: 0.25s;
 
-      &:hover:nth-child(1) {
-        background: #0e76a8;
-        a {
-          color: #fff;
-        }
-      }
-      &:hover:nth-child(2) {
-        background: #333;
-        a {
-          color: #fff;
-        }
-      }
-      &:hover:nth-child(3) {
-        background: #1da1f2;
+      &:hover {
+        transform: scale(1.2);
+
         a {
           color: #fff;
         }
       }
 
+      &:hover:nth-child(1) {
+        background: #0e76a8;
+      }
+      &:hover:nth-child(2) {
+        background: #333;
+      }
+      &:hover:nth-child(3) {
+        background: #1da1f2;
+      }
+
       a {
-        color: black;
+        color: #9932cc;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -53,6 +52,6 @@
   .socials-line {
     width: 1px;
     height: 60px;
-    background: rgba(255, 255, 255, 0.356);
+    background: #9932cc;
   }
 }

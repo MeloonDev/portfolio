@@ -26,7 +26,7 @@ const Socials = () => {
 
         <li>
           <a
-            href="https://www.twitter.com/"
+            href="https://twitter.com/MeloonDev"
             target="_blank"
             rel="noopener noreferrer"
           >
