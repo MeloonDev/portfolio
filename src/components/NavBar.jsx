@@ -27,7 +27,7 @@ const NavBar = () => {
         <a href="#home">
           <img
             className="logo"
-            src="img/logoP.svg"
+            src="img/logo.svg"
             alt="logo"
             onClick={() => onUpdateActiveLink("home")}
           />
