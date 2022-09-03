@@ -1,11 +1,5 @@
 import "./Header.scss";
-import {
-  BsWater,
-  BsSlash,
-  BsChevronDoubleDown,
-  BsX,
-  BsPlay,
-} from "react-icons/bs";
+import { BsWater, BsChevronDoubleDown, BsX, BsPlay } from "react-icons/bs";
 
 const Header = () => {
   document.addEventListener("mousemove", parallax);
@@ -30,12 +24,10 @@ const Header = () => {
       <BsWater className="layer icon water" data-speed="6" />
       <BsChevronDoubleDown className="layer icon dd" data-speed="14" />
       <BsX className="layer icon x" data-speed="9" />
-      <BsPlay className="layer icon play" data-speed="-20" />
-      {/* <BsSlash className="layer icon slash" data-speed="-7" /> */}
+      <BsPlay className="layer icon play" data-speed="-16" />
 
-      {/* <div className="header-text"> */}
       <h2 className="layer" data-speed="5">
-        Cześć, nazywam się
+        Cześć, jestem
       </h2>
       <h1 className="layer" data-speed="3">
         Mateusz <span>Melaniuk.</span>
@@ -43,7 +35,6 @@ const Header = () => {
       <h3 className="layer" data-speed="5">
         Front-End Developer
       </h3>
-      {/* </div> */}
     </div>
   );
 };
