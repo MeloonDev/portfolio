@@ -1,0 +1,23 @@
+.footer-container {
+  background: #1f1f1f;
+  display: flex;
+  justify-content: center;
+
+  .footer-section {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .line {
+      width: 100%;
+      height: 1px;
+      background: #651f87;
+    }
+
+    .copyrights {
+      margin: 15px 0;
+      color: rgb(92, 91, 91);
+    }
+  }
+}
