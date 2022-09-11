@@ -1,0 +1,141 @@
+.projects-container {
+  scroll-margin-top: 70px;
+  margin-bottom: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    margin: 0 0 30px 10%;
+    align-self: flex-start;
+    font-size: 40px;
+
+    span {
+      color: #9932cc;
+    }
+  }
+
+  .projects-section {
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    // height: 100px;
+    // background-color: green;
+
+    &.left {
+      justify-content: flex-start;
+      margin: 50px 0;
+    }
+    .project {
+      margin: 0 20px;
+      width: 40%;
+      height: 300px;
+      box-shadow: 0 0 20px #9932cc;
+      border: 1px solid #9932cc;
+      border-radius: 10px;
+      overflow: hidden;
+
+      .img {
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        transition: 0.3s;
+        position: relative;
+
+        .img-shadow {
+          height: 100%;
+          width: 100%;
+          background: rgb(0, 0, 0, 0.8);
+          //   background: linear-gradient(
+          //     to top,
+          //     rgba(0, 0, 0, 1) 0%,
+          //     rgba(0, 0, 0, 0.5) 100%
+          //   );
+          opacity: 0;
+          position: absolute;
+          top: 0;
+          right: 100%;
+          transition: 0.3s;
+
+          padding: 50px 40px;
+          display: flex;
+          flex-direction: column;
+
+          .line {
+            margin: 10px 0;
+            height: 5px;
+            width: 35%;
+            background: #9932cc;
+            border-radius: 10px;
+          }
+
+          .icons {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+
+            svg {
+              margin-right: 10px;
+              font-size: 50px;
+            }
+          }
+
+          button {
+            width: 30%;
+            // padding: 10px 20px;
+            background: none;
+            background: #9932cc;
+            border: none;
+            border-radius: 20px;
+            justify-self: flex-end;
+            align-self: flex-end;
+
+            &:hover {
+              background: #651f87;
+              cursor: pointer;
+              transition: all 0.3s;
+            }
+
+            a {
+              display: block;
+              padding: 10px;
+              font-family: "Montserrat", sans-serif;
+              color: #fff;
+              text-decoration: none;
+            }
+          }
+        }
+
+        &:hover .img-shadow {
+          opacity: 1;
+          right: 0;
+        }
+
+        &.first {
+          background-image: url("../../public/img/pp.png");
+        }
+        &.second {
+          background-image: url("../../public/img/si.png");
+        }
+        &.third {
+          background-image: url("../../public/img/best.png");
+        }
+        &.fourth {
+          background-image: url("../../public/img/movie.png");
+        }
+        &.fifth {
+          background-image: url("../../public/img/navbar.png");
+        }
+        &.sixth {
+          background-image: url("../../public/img/portfolio.png");
+        }
+      }
+
+      &:hover .img {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
