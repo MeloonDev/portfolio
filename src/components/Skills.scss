@@ -1,3 +1,86 @@
 .skills-container {
-  height: 100vh;
+  scroll-margin-top: 70px;
+  margin: 70px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #1f1f1f;
+
+  .skills-section {
+    padding: 50px 0;
+    width: 80%;
+    display: flex;
+
+    .skills-description {
+      flex: 1;
+
+      h2 {
+        margin-top: 35px;
+        font-size: 40px;
+
+        span {
+          color: #9932cc;
+        }
+      }
+
+      p {
+        padding: 30px 0;
+        font-size: 20px;
+      }
+    }
+
+    .skills-icons {
+      flex: 1;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+
+      .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20%;
+        height: 130px;
+        margin-right: 2.5%;
+        margin-bottom: 20px;
+        background: #1b1b1b;
+        color: #9932cc;
+        font-size: 70px;
+        border: 1px solid #9932cc;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover:nth-child(1) {
+          color: #e34c26;
+          border-color: #e34c26;
+        }
+        &:hover:nth-child(2) {
+          color: #2965f1;
+          border-color: #2965f1;
+        }
+        &:hover:nth-child(3) {
+          color: #f0db4f;
+          border-color: #f0db4f;
+        }
+        &:hover:nth-child(4) {
+          color: #cc6699;
+          border-color: #cc6699;
+        }
+        &:hover:nth-child(5) {
+          color: #61dbfb;
+          border-color: #61dbfb;
+        }
+        &:hover:nth-child(6) {
+          color: #b64389;
+          border-color: #b64389;
+        }
+        &:hover:nth-child(7) {
+          color: #7410f0;
+          border-color: #7410f0;
+        }
+      }
+    }
+  }
 }
