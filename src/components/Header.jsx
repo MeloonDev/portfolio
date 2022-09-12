@@ -10,17 +10,19 @@ const Header = () => {
       const x = (window.innerWidth - e.pageX * speedValue) / 100;
       const y = (window.innerHeight - e.pageY * speedValue) / 100;
 
-      move.style.transform = `translateX(${x}px) translateY(${y}px)`;
+      if (window.innerWidth > 1000) {
+        move.style.transform = `translateX(${x}px) translateY(${y}px)`;
+      }
     });
   }
 
   return (
     <div className="header-container" id="home">
-      <div className="layer circle one" data-speed="-8"></div>
-      <div className="layer circle two" data-speed="9"></div>
-      <div className="layer circle three" data-speed="-2"></div>
-      <div className="layer circle four" data-speed="-10"></div>
-      <div className="layer circle five" data-speed="12"></div>
+      <div id="layer" className="layer circle one" data-speed="-8"></div>
+      <div id="layer" className="layer circle two" data-speed="9"></div>
+      <div id="layer" className="layer circle three" data-speed="-2"></div>
+      <div id="layer" className="layer circle four" data-speed="-10"></div>
+      <div id="layer" className="layer circle five" data-speed="12"></div>
       <BsWater className="layer icon water" data-speed="6" />
       <BsChevronDoubleDown className="layer icon dd" data-speed="14" />
       <BsX className="layer icon x" data-speed="9" />

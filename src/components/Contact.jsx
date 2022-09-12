@@ -66,7 +66,11 @@ const Contact = () => {
               />
             </li>
             <li>
-              <textarea name="message" placeholder="Wiadomość"></textarea>
+              <textarea
+                name="message"
+                placeholder="Wiadomość*"
+                required
+              ></textarea>
             </li>
             <li className="liBtn">
               <input type="submit" className="btn" value="Wyślij" />

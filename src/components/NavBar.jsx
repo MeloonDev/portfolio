@@ -2,7 +2,8 @@ import { useState } from "react";
 import "./NavBar.scss";
 
 const NavBar = () => {
-  const [activeLink, setActiveLink] = useState("home");
+  // const [activeLink, setActiveLink] = useState("");
+  // "home"
   const [scrolled, setScrolled] = useState(false);
 
   const onScroll = () => {
@@ -15,9 +16,9 @@ const NavBar = () => {
 
   window.addEventListener("scroll", onScroll);
 
-  const onUpdateActiveLink = (value) => {
-    setActiveLink(value);
-  };
+  // const onUpdateActiveLink = (value) => {
+  //   setActiveLink(value);
+  // };
 
   return (
     <div
@@ -29,38 +30,42 @@ const NavBar = () => {
             className="logo"
             src="img/logo.svg"
             alt="logo"
-            onClick={() => onUpdateActiveLink("home")}
+            // onClick={() => onUpdateActiveLink("home")}
           />
         </a>
       </div>
       <div className="navbar-menu">
         <a
           href="#home"
-          className={activeLink === "home" ? "active" : ""}
-          onClick={() => onUpdateActiveLink("home")}
+          className="home"
+          // className={activeLink === "home" ? "active" : ""}
+          // onClick={() => onUpdateActiveLink("home")}
         >
           Home
         </a>
         <a
           href="#skills"
-          className={activeLink === "skills" ? "active" : ""}
-          onClick={() => onUpdateActiveLink("skills")}
+          className="skills"
+          // className={activeLink === "skills" ? "active" : ""}
+          // onClick={() => onUpdateActiveLink("skills")}
         >
-          Skills
+          Umiejętności
         </a>
         <a
           href="#projects"
-          className={activeLink === "projects" ? "active" : ""}
-          onClick={() => onUpdateActiveLink("projects")}
+          className="projects"
+          // className={activeLink === "projects" ? "active" : ""}
+          // onClick={() => onUpdateActiveLink("projects")}
         >
-          Projects
+          Projekty
         </a>
         <a
           href="#contact"
-          className={activeLink === "contact" ? "active" : ""}
-          onClick={() => onUpdateActiveLink("contact")}
+          className="contact"
+          // className={activeLink === "contact" ? "active" : ""}
+          // onClick={() => onUpdateActiveLink("contact")}
         >
-          Contact
+          Kontakt
         </a>
       </div>
     </div>

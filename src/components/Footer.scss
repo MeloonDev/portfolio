@@ -21,3 +21,23 @@
     }
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .footer-container {
+    .footer-section {
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer-container {
+    .footer-section {
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}

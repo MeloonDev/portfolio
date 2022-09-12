@@ -131,10 +131,7 @@ const Projects = () => {
                 <FaSass style={{ color: "#cc6699" }} />
               </div>
               <button>
-                <a
-                  href="https://portfolio-meloondev.vercel.app/"
-                  target="_blank"
-                >
+                <a href="https://mateusz-melaniuk.pl/" target="_blank">
                   Sprawdź &gt;
                 </a>
               </button>

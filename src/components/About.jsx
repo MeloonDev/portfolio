@@ -10,10 +10,9 @@ const About = () => {
             O mnie<span>.</span>
           </h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-            magni, pariatur voluptates dolorum vitae repellendus beatae delectus
-            molestiae odio eaque eum nihil, debitis ducimus doloremque possimus
-            accusantium et facere numquam.
+            Nazywam się Mateusz. Jestem początkującym Front-end developerem
+            głodnym wiedzy i rozwoju. Prywatnie pasjonat esportu i włoskiej
+            kuchni.
           </p>
         </div>
       </div>

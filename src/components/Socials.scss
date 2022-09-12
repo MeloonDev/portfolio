@@ -55,3 +55,46 @@
     background: #9932cc;
   }
 }
+
+@media screen and (max-width: 1150px) {
+  .socials-container {
+    right: 20px;
+
+    ul {
+      li {
+        height: 20px;
+        width: 20px;
+        a {
+          font-size: 12px;
+        }
+      }
+    }
+    .socials-line {
+      height: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .socials-container {
+    right: 15px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .socials-container {
+    right: 10px;
+    ul {
+      li {
+        height: 18px;
+        width: 18px;
+        a {
+          font-size: 11px;
+        }
+      }
+    }
+    .socials-line {
+      height: 30px;
+    }
+  }
+}

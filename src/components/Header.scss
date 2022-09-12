@@ -86,12 +86,6 @@
       left: 26%;
       color: #dd4dd1;
     }
-
-    // &.slash {
-    //   font-size: 80px;
-    //   top: 25%;
-    //   right: 20%;
-    // }
   }
 
   h2 {
@@ -107,35 +101,6 @@
       color: #9932cc;
       text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
         1px 1px 0 white;
-
-      // animation: color-change 15s infinite;
-    }
-
-    @keyframes color-change {
-      0% {
-        color: red;
-      }
-      14% {
-        color: orange;
-      }
-      28% {
-        color: yellow;
-      }
-      42% {
-        color: green;
-      }
-      57% {
-        color: blue;
-      }
-      71% {
-        color: indigo;
-      }
-      85% {
-        color: violet;
-      }
-      100% {
-        color: red;
-      }
     }
   }
 
@@ -143,8 +108,287 @@
     font-size: 55px;
     font-weight: 600;
   }
+}
 
-  //   .header-text {
-  //     position: absolute;
-  //   }
+@media screen and (max-width: 1300px) {
+  .header-container {
+    padding-top: 60px;
+
+    .circle {
+      &.one {
+        height: 250px;
+        width: 250px;
+        top: 10%;
+        right: 10%;
+      }
+
+      &.two {
+        height: 180px;
+        width: 180px;
+        bottom: 3%;
+        right: 20%;
+      }
+
+      &.three {
+        height: 400px;
+        width: 400px;
+        bottom: 6%;
+        left: -9%;
+      }
+
+      &.four {
+        top: 20%;
+        left: 22%;
+      }
+
+      &.five {
+        height: 90px;
+        width: 90px;
+        top: 46%;
+        right: 6%;
+      }
+    }
+
+    .icon {
+      &.water {
+        font-size: 110px;
+        bottom: 8%;
+        right: 26%;
+      }
+
+      &.dd {
+        top: 14%;
+        right: 40%;
+      }
+
+      &.x {
+        top: 12%;
+        left: 10%;
+      }
+
+      &.play {
+        font-size: 140px;
+        bottom: 12%;
+        left: 23%;
+      }
+    }
+
+    h2 {
+      font-size: 40px;
+    }
+
+    h1 {
+      font-size: 70px;
+    }
+
+    h3 {
+      font-size: 45px;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header-container {
+    .circle {
+      &.one {
+        top: 8%;
+        right: 8%;
+      }
+
+      &.two {
+        bottom: 2%;
+        right: 15%;
+      }
+
+      &.three {
+        bottom: 2%;
+        left: -19%;
+      }
+
+      &.five {
+        top: 53%;
+      }
+    }
+
+    .icon {
+      &.dd {
+        top: 20%;
+        right: 45%;
+      }
+
+      &.x {
+        top: 17%;
+        left: 5%;
+      }
+
+      &.play {
+        bottom: 18%;
+        left: 33%;
+      }
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+
+    h1 {
+      font-size: 55px;
+    }
+
+    h3 {
+      font-size: 35px;
+    }
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .header-container {
+    .icon {
+      &.dd {
+        display: none;
+      }
+
+      &.play {
+        display: none;
+      }
+    }
+
+    h2 {
+      font-size: 25px;
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+
+    h3 {
+      font-size: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header-container {
+    .circle {
+      &.one {
+        height: 170px;
+        width: 170px;
+        top: 12%;
+        right: 8%;
+      }
+
+      &.two {
+        height: 160px;
+        width: 160px;
+        bottom: 2%;
+        right: 15%;
+      }
+
+      &.three {
+        height: 350px;
+        width: 350px;
+        bottom: 2%;
+        left: -25%;
+      }
+
+      &.five {
+        width: 70px;
+        height: 70px;
+        top: 53%;
+        right: 2%;
+      }
+    }
+
+    .icon {
+      &.x {
+        font-size: 80px;
+      }
+
+      &.water {
+        font-size: 100px;
+      }
+    }
+
+    h2 {
+      font-size: 25px;
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+
+    h3 {
+      font-size: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header-container {
+    .circle {
+      &.three {
+        height: 270px;
+        width: 270px;
+      }
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+
+    h1 {
+      font-size: 30px;
+    }
+
+    h3 {
+      font-size: 23px;
+    }
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .header-container {
+    .circle {
+      &.one {
+        height: 150px;
+        width: 150px;
+      }
+
+      &.two {
+        height: 110px;
+        width: 110px;
+        bottom: 4%;
+      }
+
+      &.three {
+        bottom: 0%;
+        left: -40%;
+      }
+
+      &.four {
+        height: 80px;
+        width: 80px;
+        top: 20%;
+        left: 12%;
+      }
+
+      &.five {
+        width: 65px;
+        height: 65px;
+        top: 53%;
+        right: -2%;
+      }
+    }
+
+    .icon {
+      &.x {
+        font-size: 60px;
+      }
+
+      &.water {
+        right: 30%;
+        font-size: 70px;
+      }
+    }
+  }
 }
