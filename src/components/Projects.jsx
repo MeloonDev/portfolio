@@ -45,7 +45,7 @@ const Projects = () => {
               <div className="icons">
                 <FaHtml5 style={{ color: "#e34c26" }} />
                 <FaCss3Alt style={{ color: "#2965f1" }} />
-                <SiJavascript style={{ color: "#f0db4f", fontSize: "45px" }} />
+                <SiJavascript style={{ color: "#f0db4f" }} />
               </div>
               <button>
                 <a href="https://sign-in-up.vercel.app/" target="_blank">
@@ -66,7 +66,7 @@ const Projects = () => {
               <div className="icons">
                 <FaHtml5 style={{ color: "#e34c26" }} />
                 <FaCss3Alt style={{ color: "#2965f1" }} />
-                <SiJavascript style={{ color: "#f0db4f", fontSize: "45px" }} />
+                <SiJavascript style={{ color: "#f0db4f" }} />
               </div>
               <button>
                 <a href="https://best-technology.vercel.app/" target="_blank">
