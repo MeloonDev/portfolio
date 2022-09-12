@@ -23,9 +23,7 @@ const Projects = () => {
               <p>Wykonane przy użyciu:</p>
               <div className="icons">
                 <FaReact style={{ color: "#61DBFB" }} />
-                <SiStyledcomponents
-                  style={{ color: "#b64389", fontSize: "60px" }}
-                />
+                <SiStyledcomponents style={{ color: "#b64389" }} />
               </div>
               <button>
                 <a
