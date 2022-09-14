@@ -30,13 +30,13 @@ const Skills = () => {
   return (
     <div id="skills" className="skills-container">
       <div className="skills-section">
-        <div className="skills-description">
+        <div data-aos="zoom-in-right" className="skills-description">
           <h2>
             Umiejętności<span>.</span>
           </h2>
           <p>{isHovering}</p>
         </div>
-        <div className="skills-icons">
+        <div data-aos="zoom-in-left" className="skills-icons">
           <div
             className="icon"
             onMouseEnter={() => handleMouseOver(1)}

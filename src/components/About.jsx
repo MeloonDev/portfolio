@@ -3,7 +3,7 @@ import "./About.scss";
 const About = () => {
   return (
     <div className="about-container">
-      <div className="about-section">
+      <div data-aos="zoom-in" className="about-section">
         <img src="/img/prog.svg" alt="programmer" />
         <div className="desc">
           <h1 className="title">

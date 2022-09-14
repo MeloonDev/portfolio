@@ -14,7 +14,7 @@ const Projects = () => {
       <h1>
         Przykładowe projekty<span>:</span>
       </h1>
-      <div className="projects-section">
+      <div data-aos="zoom-in-left" className="projects-section">
         <div className="project">
           <div className="img first">
             <div className="img-shadow">
@@ -61,7 +61,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <div className="projects-section left">
+      <div data-aos="zoom-in-right" className="projects-section left">
         <div className="project">
           <div className="img third">
             <div className="img-shadow">
@@ -109,7 +109,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <div className="projects-section">
+      <div data-aos="zoom-in-left" className="projects-section">
         <div className="project">
           <div className="img fifth">
             <div className="img-shadow">

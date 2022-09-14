@@ -32,7 +32,7 @@ const Contact = () => {
 
   return (
     <div className="contact-container" id="contact">
-      <div className="contact-info">
+      <div data-aos="zoom-in-right" className="contact-info">
         <div className="info">
           <div className="line"></div>
           <IoMdPerson className="icon" />
@@ -49,7 +49,7 @@ const Contact = () => {
           <p>Warszawa, Praga Południe</p>
         </div>
       </div>
-      <div className="contact-form">
+      <div data-aos="zoom-in-left" className="contact-form">
         <form ref={refForm} onSubmit={sendEmail}>
           <ul>
             <li className="half">
