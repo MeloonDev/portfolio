@@ -247,6 +247,7 @@
       &.play {
         bottom: 18%;
         left: 33%;
+        animation: upDown 2.3s infinite linear;
       }
 
       &.water {

@@ -12,6 +12,8 @@ const Header = () => {
 
       if (window.innerWidth > 1000) {
         move.style.transform = `translateX(${x}px) translateY(${y}px)`;
+      } else {
+        move.style.transform = `translateX(0) translateY(0)`;
       }
     });
   }
