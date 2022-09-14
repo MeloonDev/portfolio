@@ -1,7 +1,9 @@
 import "./Contact.scss";
 import { IoMdMail, IoMdPerson } from "react-icons/io";
 import { IoLocation } from "react-icons/io5";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
@@ -30,9 +32,38 @@ const Contact = () => {
       );
   };
 
+  const boxVariantLeft = {
+    visible: { opacity: 1, x: 0, transition: { duration: 0.6 } },
+    hidden: { opacity: 0, x: -300 },
+  };
+
+  const boxVariantRight = {
+    visible: { opacity: 1, x: 0, transition: { duration: 0.6 } },
+    hidden: { opacity: 0, x: 400 },
+  };
+
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    }
+  }, [control, inView]);
+
   return (
     <div className="contact-container" id="contact">
+<<<<<<< HEAD
       <div data-aos="zoom-in-right" className="contact-info">
+=======
+      <motion.div
+        ref={ref}
+        variants={boxVariantLeft}
+        initial="hidden"
+        animate={control}
+        className="contact-info"
+      >
+>>>>>>> 09956d97cc991d023e91296b2f9df736878bfabc
         <div className="info">
           <div className="line"></div>
           <IoMdPerson className="icon" />
@@ -48,8 +79,19 @@ const Contact = () => {
           <IoLocation className="icon" />
           <p>Warszawa, Praga Południe</p>
         </div>
+<<<<<<< HEAD
       </div>
       <div data-aos="zoom-in-left" className="contact-form">
+=======
+      </motion.div>
+      <motion.div
+        ref={ref}
+        variants={boxVariantRight}
+        initial="hidden"
+        animate={control}
+        className="contact-form"
+      >
+>>>>>>> 09956d97cc991d023e91296b2f9df736878bfabc
         <form ref={refForm} onSubmit={sendEmail}>
           <ul>
             <li className="half">
@@ -77,7 +119,7 @@ const Contact = () => {
             </li>
           </ul>
         </form>
-      </div>
+      </motion.div>
     </div>
   );
 };
