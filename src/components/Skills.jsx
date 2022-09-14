@@ -1,4 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import "./Skills.scss";
 import {
   FaReact,
@@ -27,16 +29,47 @@ const Skills = () => {
     setIsHovering(descArray[number]);
   };
 
+  const boxVariantLeft = {
+    visible: { opacity: 1, scale: 1, x: 0, transition: { duration: 0.6 } },
+    hidden: { opacity: 0, scale: 0, x: -300 },
+  };
+
+  const boxVariantRight = {
+    visible: { opacity: 1, scale: 1, x: 0, transition: { duration: 0.6 } },
+    hidden: { opacity: 0, scale: 0, x: 400 },
+  };
+
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    }
+  }, [control, inView]);
+
   return (
     <div id="skills" className="skills-container">
       <div className="skills-section">
-        <div className="skills-description">
+        <motion.div
+          ref={ref}
+          variants={boxVariantLeft}
+          initial="hidden"
+          animate={control}
+          className="skills-description"
+        >
           <h2>
             Umiejętności<span>.</span>
           </h2>
           <p>{isHovering}</p>
-        </div>
-        <div className="skills-icons">
+        </motion.div>
+        <motion.div
+          ref={ref}
+          variants={boxVariantRight}
+          initial="hidden"
+          animate={control}
+          className="skills-icons"
+        >
           <div
             className="icon"
             onMouseEnter={() => handleMouseOver(1)}
@@ -86,7 +119,7 @@ const Skills = () => {
           >
             <FaBootstrap />
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

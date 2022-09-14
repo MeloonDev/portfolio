@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import "./Projects.scss";
 import {
   FaReact,
@@ -9,12 +12,47 @@ import {
 import { SiStyledcomponents, SiJavascript } from "react-icons/si";
 
 const Projects = () => {
+  const boxVariantLeft = {
+    visible: { opacity: 1, scale: 1, x: 0, transition: { duration: 0.6 } },
+    hidden: { opacity: 0, scale: 0, x: -300 },
+  };
+
+  const boxVariantRight = {
+    visible: { opacity: 1, scale: 1, x: 0, transition: { duration: 0.6 } },
+    hidden: { opacity: 0, scale: 0, x: 300 },
+  };
+
+  const control = useAnimation();
+  const control2 = useAnimation();
+  const control3 = useAnimation();
+  const [ref, inView] = useInView();
+  const [ref2, inView2] = useInView();
+  const [ref3, inView3] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    }
+    if (inView2) {
+      control2.start("visible");
+    }
+    if (inView3) {
+      control3.start("visible");
+    }
+  }, [control, inView, inView2, inView3]);
+
   return (
     <div id="projects" className="projects-container">
       <h1>
         Przykładowe projekty<span>:</span>
       </h1>
-      <div className="projects-section">
+      <motion.div
+        ref={ref}
+        variants={boxVariantRight}
+        initial="hidden"
+        animate={control}
+        className="projects-section"
+      >
         <div className="project">
           <div className="img first">
             <div className="img-shadow">
@@ -60,8 +98,14 @@ const Projects = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="projects-section left">
+      </motion.div>
+      <motion.div
+        ref={ref2}
+        variants={boxVariantLeft}
+        initial="hidden"
+        animate={control2}
+        className="projects-section left"
+      >
         <div className="project">
           <div className="img third">
             <div className="img-shadow">
@@ -108,8 +152,14 @@ const Projects = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="projects-section">
+      </motion.div>
+      <motion.div
+        ref={ref3}
+        variants={boxVariantRight}
+        initial="hidden"
+        animate={control3}
+        className="projects-section"
+      >
         <div className="project">
           <div className="img fifth">
             <div className="img-shadow">
@@ -154,7 +204,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
