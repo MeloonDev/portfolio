@@ -29,6 +29,7 @@ const Projects = () => {
                 <a
                   href="https://e-commerce-polishpride.vercel.app/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   Sprawdź &gt;
                 </a>
@@ -48,7 +49,11 @@ const Projects = () => {
                 <SiJavascript style={{ color: "#f0db4f" }} />
               </div>
               <button>
-                <a href="https://sign-in-up.vercel.app/" target="_blank">
+                <a
+                  href="https://sign-in-up.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Sprawdź &gt;
                 </a>
               </button>
@@ -69,7 +74,11 @@ const Projects = () => {
                 <SiJavascript style={{ color: "#f0db4f" }} />
               </div>
               <button>
-                <a href="https://best-technology.vercel.app/" target="_blank">
+                <a
+                  href="https://best-technology.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Sprawdź &gt;
                 </a>
               </button>
@@ -91,6 +100,7 @@ const Projects = () => {
                 <a
                   href="https://movie-app-wine-ten.vercel.app/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   Sprawdź &gt;
                 </a>
@@ -111,7 +121,11 @@ const Projects = () => {
                 <FaSass style={{ color: "#cc6699" }} />
               </div>
               <button>
-                <a href="https://animated-nav-bar.vercel.app/" target="_blank">
+                <a
+                  href="https://animated-nav-bar.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Sprawdź &gt;
                 </a>
               </button>
@@ -129,7 +143,11 @@ const Projects = () => {
                 <FaSass style={{ color: "#cc6699" }} />
               </div>
               <button>
-                <a href="https://mateusz-melaniuk.pl/" target="_blank">
+                <a
+                  href="https://mateusz-melaniuk.pl/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Sprawdź &gt;
                 </a>
               </button>

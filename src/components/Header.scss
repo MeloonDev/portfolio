@@ -330,6 +330,20 @@
         height: 270px;
         width: 270px;
       }
+
+      &.two {
+        bottom: 12%;
+      }
+
+      &.four {
+        top: 30%;
+      }
+    }
+
+    .icon {
+      &.water {
+        bottom: 16%;
+      }
     }
 
     h2 {
@@ -357,7 +371,7 @@
       &.two {
         height: 110px;
         width: 110px;
-        bottom: 4%;
+        bottom: 14%;
       }
 
       &.three {
@@ -368,7 +382,7 @@
       &.four {
         height: 80px;
         width: 80px;
-        top: 20%;
+        top: 30%;
         left: 12%;
       }
 
@@ -388,6 +402,7 @@
       &.water {
         right: 30%;
         font-size: 70px;
+        bottom: 16%;
       }
     }
   }

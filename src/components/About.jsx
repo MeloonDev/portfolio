@@ -11,8 +11,7 @@ const About = () => {
           </h1>
           <p>
             Nazywam się Mateusz. Jestem początkującym Front-end developerem
-            głodnym wiedzy i rozwoju. Prywatnie pasjonat esportu i włoskiej
-            kuchni.
+            stawiającym na rozwój. Prywatnie pasjonat esportu i włoskiej kuchni.
           </p>
         </div>
       </div>
