@@ -1,12 +1,6 @@
 import { useState } from "react";
 import "./Skills.scss";
-import {
-  FaReact,
-  FaHtml5,
-  FaCss3Alt,
-  FaSass,
-  FaBootstrap,
-} from "react-icons/fa";
+import { FaReact, FaHtml5, FaCss3Alt, FaSass, FaGitAlt } from "react-icons/fa";
 import { SiStyledcomponents, SiJavascript } from "react-icons/si";
 
 const descArray = [
@@ -17,7 +11,7 @@ const descArray = [
   "SASS jest to preprocesor CSS pozwalający tworzyć arkusze stylów szybciej i dużo czytelniej. Plik zawierający kod SASS zapisywany jest z rozszerzeniem .sass bądź .scss i wzbogaca napisanie arkuszy stylów o dodatkowe funkcje takie jak zmienne, albo obliczenia.",
   "React jest tak zwaną biblioteką języka programowania JavaScript. Wykorzystuje się ją podczas tworzenia interfejsów użytkownika dla różnego typu aplikacji. Dzięki niej można stworzyć bardzo złożony interfejs, składający się z małych, oddzielonych od siebie elementów.",
   "Styled-components powstało z myślą o łatwym i użytecznym sposobie stylowania elementów HTML-a i opiera się na podejściu CSS-in-JS, według którego szablon powinien być ściśle związany z JavaScriptem.",
-  "BootStrap to  najpopularniejszy na świecie framework CSS umożliwiający szybkie projektowanie oraz tworzenie kodu frontendu responsywnych stron internetowych.",
+  "Git to rozproszony system kontroli wersji, który pozwala na niezależne zmiany w jednym kodzie, prowadzone w różnych gałęziach.",
 ];
 
 const Skills = () => {
@@ -84,7 +78,7 @@ const Skills = () => {
             onMouseEnter={() => handleMouseOver(7)}
             onMouseLeave={() => handleMouseOver(0)}
           >
-            <FaBootstrap />
+            <FaGitAlt />
           </div>
         </div>
       </div>
